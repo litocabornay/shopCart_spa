@@ -19,3 +19,123 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 316ms (Views: 14.2ms)
 
 
+Started GET "/" for ::1 at 2018-09-13 07:07:52 +0800
+Processing by ShopController#index as HTML
+  Rendering shop/index.html.haml within layouts/application
+  Rendered shop/index.html.haml within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 240ms
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 6 spaces used for indentation, but the rest of the document was indented using 4 spaces.):
+    1: .title_left
+    2:     %h3
+    3:       Test Cart
+    4:       %small Dashboard
+    5: .clearfix
+    6: .row
+  
+app/views/shop/index.html.haml:3
+Started GET "/" for ::1 at 2018-09-13 07:08:18 +0800
+Processing by ShopController#index as HTML
+  Rendering shop/index.html.haml within layouts/application
+  Rendered shop/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 20ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: .title_left
+    2:   %h3
+    3:     Test Cart
+    4:       %small Dashboard
+    5: .clearfix
+    6: .row
+    7:   .col-md-12
+  
+app/views/shop/index.html.haml:4
+Started GET "/" for ::1 at 2018-09-13 07:08:40 +0800
+Processing by ShopController#index as HTML
+  Rendering shop/index.html.haml within layouts/application
+  Rendered shop/index.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 757ms (Views: 751.9ms)
+
+
+Started GET "/" for ::1 at 2018-09-13 07:08:49 +0800
+Processing by ShopController#index as HTML
+  Rendering shop/index.html.haml within layouts/application
+  Rendered shop/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 33ms (Views: 30.0ms)
+
+
+Started GET "/" for ::1 at 2018-09-13 07:11:03 +0800
+Processing by ShopController#index as HTML
+  Rendering shop/index.html.haml within layouts/application
+  Rendered shop/index.html.haml within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 22ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'text/css'
+Checked in these paths: 
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/app/assets/config
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/app/assets/images
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/app/assets/javascripts
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/app/assets/stylesheets
+  /Users/ringmdcebu/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/ringmdcebu/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/ringmdcebu/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/ringmdcebu/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/node_modules):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title Logicalware
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+  
+app/assets/stylesheets/application.css:12
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___1351991639789168857_70106445546160'
+Started GET "/" for ::1 at 2018-09-13 07:12:18 +0800
+Processing by ShopController#index as HTML
+  Rendering shop/index.html.haml within layouts/application
+  Rendered shop/index.html.haml within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 46ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
+Checked in these paths: 
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/app/assets/config
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/app/assets/images
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/app/assets/javascripts
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/app/assets/stylesheets
+  /Users/ringmdcebu/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/ringmdcebu/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/ringmdcebu/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/ringmdcebu/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/ringmdcebu/Documents/exam/shopCart_spa/node_modules):
+     5:     %title Logicalware
+     6:     = csrf_meta_tags
+     7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+     9:   %body
+    10:     = yield
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.haml:8:in `_app_views_layouts_application_html_haml___1351991639789168857_70106445289560'
+Started GET "/" for ::1 at 2018-09-13 07:12:34 +0800
+Processing by ShopController#index as HTML
+  Rendering shop/index.html.haml within layouts/application
+  Rendered shop/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 43ms (Views: 38.5ms)
+
+
+Started GET "/" for ::1 at 2018-09-13 07:13:47 +0800
+Processing by ShopController#index as HTML
+  Rendering shop/index.html.haml within layouts/application
+  Rendered shop/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 609ms (Views: 336.8ms)
+
+
