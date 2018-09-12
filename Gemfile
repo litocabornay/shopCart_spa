@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 # User haml gem for views
 gem 'haml', '~> 5.0', '>= 5.0.4'
+gem "haml-rails", "~> 1.0"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # Use CoffeeScript for .coffee assets and views
