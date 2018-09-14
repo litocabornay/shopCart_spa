@@ -16,10 +16,8 @@
             Products
             %span.sr-only (current)
         %li
-          %a{href: "#"} Basket
+          %a{href: "/carts/#{current_order.order_items.size}"} Basket
       %ul.nav.navbar-nav.navbar-right
-        %li
-          %h1.cart-text= render 'layouts/cart_text'
         %li
           %a{href: "#"} Logout
 
