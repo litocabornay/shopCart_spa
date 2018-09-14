@@ -1,10 +1,10 @@
-%h3.text-center Products for Sale
-.row
-  %h1.cart-text.pull_right= render 'layouts/cart_text'
+%h3.text-center Product List
 .row
   .col-xs-6.col-xs-offset-3
     - @products.each do |product|
       = render "product_row", product: product, order_item: @order_item
+.row
+  %h1.cart-text.pull_right= render 'layouts/cart_text'
 .row
   .shopping-cart
     = render "carts/shopping_cart"
